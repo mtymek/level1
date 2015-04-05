@@ -1,5 +1,7 @@
 <?php
 
+use OcraCachedViewResolver\Module as OcraCachedViewResolver;
+
 return [
     'view_manager' => [
         'display_not_found_reason' => true,
@@ -12,6 +14,16 @@ return [
                 'options' => [
                     'dir' => 'data/cache/asset', // path/to/cache
                 ],
+            ],
+        ],
+    ],
+    OcraCachedViewResolver::CONFIG => [
+        // configuration to be passed to `Zend\Cache\StorageFactory#factory()`
+        // see http://framework.zend.com/manual/2.3/en/modules/zend.cache.storage.adapter.html#quick-start
+        // Used to instantiate service `'OcraCachedViewResolver\\Cache\\ResolverCache'`
+        'cache' => [
+            'adapter' => [
+                'name'    => 'blackhole',
             ],
         ],
     ],

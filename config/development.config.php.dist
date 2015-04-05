@@ -1,9 +1,14 @@
 <?php
 
+// Ensure all errors will be visible
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 return [
     // Development time modules
     'modules' => [
         'ZendDeveloperTools',
+        'ApplicationDev',
     ],
 
     'module_listener_options' => [

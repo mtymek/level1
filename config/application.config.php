@@ -5,6 +5,7 @@ return [
         // Third party modules
         'AssetManager',
         'ZF\DevelopmentMode',
+        'OcraCachedViewResolver',
 
         // Application
         'Application',

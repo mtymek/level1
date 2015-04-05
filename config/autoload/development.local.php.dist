@@ -4,5 +4,15 @@ return [
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
-    ]
+    ],
+    'asset_manager' => [
+        'caching' => [
+            'default' => [
+                'cache' => 'Assetic\Cache\FilesystemCache',
+                'options' => [
+                    'dir' => 'data/cache/asset', // path/to/cache
+                ],
+            ],
+        ],
+    ],
 ];

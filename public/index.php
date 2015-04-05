@@ -11,7 +11,7 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
 }
 
 // Setup autoloading
-require 'init_autoloader.php';
+require 'vendor/autoload.php';
 
 // Config
 $appConfig = include 'config/application.config.php';

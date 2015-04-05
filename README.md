@@ -10,8 +10,7 @@ Modules shipped by default
 
 * `AssetManager` - allows you to keep your assets clean from the very beginning
 * `OcraCachedViewResolver` - caches process of resolving template names to template paths
-* `ZendDeveloperTools` - shows some information useful in dev mode
-* `Zf2Whoops` - displays nice error message in dev mode
+* `ZendDeveloperTools` - shows developer toolbar with debug and profiling information
 
 Installation
 ------------

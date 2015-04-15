@@ -13,12 +13,21 @@
         "zendframework/zendframework": "~2.4",
         "zfcampus/zf-development-mode": "~2.0",
         "rwoverdijk/assetmanager": "~1.4",
-        "ocramius/ocra-cached-view-resolver": "3.0.*"
+        "ocramius/ocra-cached-view-resolver": "3.0.*",
+        "mtymek/class-dumper": "dev-master"
     },
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src",
             "ApplicationDev\\": "module/ApplicationDev/src"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php"
+        ],
+        "post-update-cmd": [
+            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php"
+        ]
     }
 }

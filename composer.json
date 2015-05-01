@@ -24,10 +24,10 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php"
+            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php.cache"
         ],
         "post-update-cmd": [
-            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php"
+            "vendor/bin/dump-classes.php vendor/mtymek/class-dumper/config/zf2.4-mvc.php data/cache/class_cache.php.cache"
         ]
     }
 }

@@ -12,7 +12,7 @@ if (php_sapi_name() === 'cli-server' && is_file(__DIR__ . parse_url($_SERVER['RE
 
 // Setup autoloading
 require 'vendor/autoload.php';
-include 'data/cache/class_cache.php';
+include 'data/cache/class_cache.php.cache';
 
 // Config
 $appConfig = include 'config/application.config.php';
